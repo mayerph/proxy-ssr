@@ -22,6 +22,7 @@ app.use(cookieParser())
 app.get(
   "/share/:id",
   async (req: Request, res: Response, next: NextFunction) => {
+    console.log("kommt hier was an")
     const url = `${destination}${req.url}`
     const { html } = await ssr(url)
     return res.status(200).send(html)
