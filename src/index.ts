@@ -9,7 +9,7 @@ import { ssr } from "./ssr"
 var cookieParser = require("cookie-parser")
 
 const app = express()
-const destination = `${config.proxy.protocol}://${config.proxy.server}:${config.proxy.port}`
+const destination = `${config.proxy.protocol}://${config.proxy.server}`
 app.use(cors())
 app.use(bodyParser.json())
 app.use(cookieParser())
