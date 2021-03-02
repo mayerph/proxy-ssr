@@ -49,6 +49,6 @@ app.get("*", (req: Request, res: Response, next: NextFunction) => {
 /**
  * Start server on port 5000
  */
-app.listen(process.env.PORT || 5000, () => {
+app.listen(5000, () => {
   console.log(`backend started with port ${config.server.port}`)
 })

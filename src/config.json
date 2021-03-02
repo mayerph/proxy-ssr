@@ -4,7 +4,7 @@
     },
     "proxy" : {
         "protocol" : "https",
-        "server" : "share-demo-2.web.app/#/"
+        "server" : "share-demo-2.web.app/"
        
     }
 }
