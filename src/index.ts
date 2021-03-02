@@ -34,7 +34,14 @@ app.get(
  */
 app.get("*", (req: Request, res: Response, next: NextFunction) => {
   req
-    .pipe(request({ qs: req.query, uri: `${destination}${req.url}` }))
+    .pipe(
+      request({ qs: req.query, uri: `${destination}${req.url}` }, (error, response, body) => {
+        if (error) {
+          return 
+        }
+
+      })
+      )
     .pipe(res)
 })
 
